@@ -1,0 +1,65 @@
+.test {
+    background-color: #f3f3f3;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__title {
+        width: 172px;
+        @include title;
+    }
+    &__title:hover {
+        @include title-hover;
+    }
+    &__description {
+        @include description;
+    }
+    &__description:hover {
+        @include description-hover;
+    }
+    &__slider {
+        padding-top: 56px;
+        background-color: #ffffff;
+    }
+    &__slider-clause {
+        height: 130px;
+        display: flex !important;
+        flex-flow: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-bottom: 60px;
+    }
+    &__slider-info {
+        width: 754px;
+    }
+    &__slider-description {
+        margin: 0;
+        padding-bottom: 20px;
+        color: #81868e;
+        font-family: $second-font-family;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__slider-headler {
+        margin: 0;
+        padding-bottom: 6px;
+        color: #19bd9a;
+        font-family: $second-font-family;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__slider-post {
+        margin: 0;
+        padding-bottom: 50px;
+        color: #464646;
+        font-family: $second-font-family;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.test .slick-dots {
+    bottom: 56px;
+}

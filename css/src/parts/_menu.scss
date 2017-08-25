@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    justify-content: flex-end;
+    list-style: none;
+    &__item {
+        padding-right: 30px;
+    }
+    &__item:last-child {
+        padding-right: 0px;
+    }
+    &__link {
+        font-family: $second-font-family;
+        font-size: $menu-font-size;
+        color: $white-color;
+        line-height: 12px;
+        text-decoration: none;
+        border: solid 1px transparent;
+        padding: 5px 15px;
+        border-radius: 15px;
+        transition: all 0.1s linear 0.1s;
+    }
+    &__link:hover {
+        color: $color-blue;
+        font-size: 20px;
+        box-shadow: inset 0px 0px 34px 0px rgba(0, 255, 0, 1);
+    }
+}

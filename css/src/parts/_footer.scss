@@ -1,0 +1,86 @@
+.footer {
+    padding-top: 75px;
+    &__logo {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    &__copyright {
+        color: #81868e;
+        font-family: $second-font-family;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 0;
+        padding: 0;
+    }
+    &__social {
+        margin: 0 auto 72px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    &__social-item {
+        position: relative;
+        text-align: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        margin-right: 12px;
+        transition: all .3s ease;
+    }
+    &__social-item:last-child {
+        margin-right: 0;
+    }
+    &__social-item:nth-child(1) {
+        background-color: #395999;
+        border: 1px solid #395999;
+        &:hover {
+            background-color: #00FF00;
+            box-shadow: inset 0 0 1em red, 0 0 1em #7FFF00;
+        }
+    }
+    &__social-item:nth-child(2) {
+        background-color: #21a7d2;
+        border: 1px solid #21a7d2;
+        &:hover {
+            background-color: #000080;
+            box-shadow: inset 0 0 1em red, 0 0 1em #7FFF00;
+        }
+    }
+    &__social-item:nth-child(3) {
+        background-color: #0577a9;
+        border: 1px solid #0577a9;
+        &:hover {
+            background-color: #800080;
+            box-shadow: inset 0 0 1em red, 0 0 1em #7FFF00;
+        }
+    }
+    &__social-item:nth-child(4) {
+        background-color: #3d739c;
+        border: 1px solid #3d739c;
+        &:hover {
+            background-color: #808000;
+            box-shadow: inset 0 0 1em red, 0 0 1em #7FFF00;
+        }
+    }
+    &__social-item:nth-child(5) {
+        background-color: #87caf0;
+        border: 1px solid #87caf0;
+        &:hover {
+            background-color: #2F4F4F;
+            box-shadow: inset 0 0 1em red, 0 0 1em #7FFF00;
+        }
+    }
+    &__social-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 12px;
+        color: $white-color;
+    }
+}

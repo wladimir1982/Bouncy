@@ -1,0 +1,109 @@
+@mixin properties-for-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin for-title-header-footer($white-color) {
+    color: $white-color;
+    font-family: $second-font-family;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+@mixin caption {
+    width: 31%;
+    color: #ffffff;
+    font-family: "Source Sans Pro";
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+@mixin caption-hover {
+    color: #FF0000;
+    text-shadow: 3px 3px 2px black, 0 0 1em rgba(0, 255, 0, 1);
+}
+
+@mixin title {
+    margin: 0 auto 32px;
+    color: #333b46;
+    text-align: center;
+    font-family: $first-font-family;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@mixin title-hover {
+    transition: all .3s ease;
+    color: #FF0000;
+}
+
+@mixin description {
+    width: 457px;
+    margin: 0 auto 82px;
+    text-align: center;
+    color: #81868e;
+    font-family: $second-font-family;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+@mixin description-hover {
+    color: #FF00FF;
+}
+
+@mixin for-btn-portfolio {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    color: $color-for-btn-portfolio;
+    font-family: $second-font-family;
+    font-size: 16px;
+    line-height: 12px;
+}
+
+@mixin for-btn-portfolio-hover {
+    background: #00FF00;
+    color: #FFFF00;
+    box-shadow: 0 0 0 2px #008000 inset, 0 0 0 4px #FFFF00 inset;
+    transition: .3s linear;
+}
+
+@mixin for-slider-headler {
+    margin: 0;
+    padding: 20px 15px 0 0;
+    color: #464646;
+    font-family: $second-font-family;
+    font-size: 20px;
+    line-height: 125px;
+}
+
+@mixin for-slider-post {
+    padding: 5px 15px 20px 0;
+    margin: 0;
+    color: #81868e;
+    font-family: $first-font-family;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+@mixin for-slider-description {
+    padding: 0 15px 0 315px;
+    color: #81868e;
+    font-family: $second-font-family;
+    font-size: 14px;
+    line-height: 25px;
+}

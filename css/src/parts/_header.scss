@@ -1,0 +1,54 @@
+.header {
+    background-image: url(../../img/imagebg.png);
+    background-attachment: fixed;
+    padding-top: 48px;
+    height: 100vh;
+    min-height: 100vh;
+    @include properties-for-background;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 170px;
+    }
+    &__logo {
+        width: 30%;
+        text-align: left;
+    }
+    &__menu {
+        width: 70%;
+    }
+    &__caption {
+        margin: 0 auto 25px;
+        padding: 0;
+        @include caption;
+    }
+    &__caption:hover {
+        transition: all .3s ease;
+        transform: scale(1.5);
+        @include caption-hover;
+    }
+    &__depiction {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto 170px;
+        color: $white-color;
+        font-family: $second-font-family;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__depiction:hover {
+        color: #FF0000;
+        transition: all .3s ease;
+    }
+    &__circle {
+        display: block;
+        width: 36px;
+        margin: 0 auto;
+        transition: all .3s ease;
+    }
+    &__circle:hover {
+        transform: scale(1.5) rotateZ(20deg);
+    }
+}
