@@ -56,6 +56,8 @@
 
         //        Скрипты для Гугл карты
 
+
+
         var latitude = 46.478916,
             longitude = 30.723341,
             map_zoom = 18;
@@ -67,6 +69,8 @@
         var main_color = '#007148', //основной цвет
             saturation_value = -1, //насыщенность
             brightness_value = 1; //яркость
+
+
 
         //Стили для элементов на карте
         var style = [
