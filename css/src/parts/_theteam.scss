@@ -1,18 +1,17 @@
 .theteam {
     padding: 100px 0 100px;
     &__title {
-        width: 107px;
         @include title;
     }
-    &__title:hover {
-        @include title-hover;
-    }
+//    &__title:hover {
+//        @include title-hover;
+//    }
     &__description {
         @include description;
     }
-    &__description:hover {
-        @include description-hover;
-    }
+//    &__description:hover {
+//        @include description-hover;
+//    }
     &__slider-clause {
         display: flex !important;
         flex-flow: row;

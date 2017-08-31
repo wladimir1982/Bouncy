@@ -6,9 +6,10 @@
     min-height: 100vh;
     @include properties-for-background;
     &__row {
+//        width: 1141px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         margin-bottom: 170px;
     }
@@ -24,11 +25,11 @@
         padding: 0;
         @include caption;
     }
-    &__caption:hover {
-        transition: all .3s ease;
-        transform: scale(1.5);
-        @include caption-hover;
-    }
+    //    &__caption:hover {
+    //        transition: all .3s ease;
+    //        transform: scale(1.5);
+    //        @include caption-hover;
+    //    }
     &__depiction {
         width: 50%;
         text-align: center;
@@ -38,10 +39,10 @@
         font-size: 16px;
         line-height: 28px;
     }
-    &__depiction:hover {
-        color: #FF0000;
-        transition: all .3s ease;
-    }
+    //    &__depiction:hover {
+    //        color: #FF0000;
+    //        transition: all .3s ease;
+    //    }
     &__circle {
         display: block;
         width: 36px;
@@ -51,4 +52,15 @@
     &__circle:hover {
         transform: scale(1.5) rotateZ(20deg);
     }
+}
+
+.sheensay_fixed {
+    padding-left: 15px;
+    border-radius: 5px;
+    width: 81.5%;
+    position: fixed !important;
+    top: 0 !important;
+//    background: rgba(255, 0, 0, 0.5);
+    background: rgba(85, 107, 47, 0.5);
+    z-index: 1;
 }

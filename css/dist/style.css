@@ -414,7 +414,7 @@ Header
   .header__row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 170px; }
   .header__logo {
@@ -425,7 +425,7 @@ Header
   .header__caption {
     margin: 0 auto 25px;
     padding: 0;
-    width: 31%;
+    text-align: center;
     color: #ffffff;
     font-family: "Source Sans Pro";
     font-size: 35px;
@@ -433,11 +433,6 @@ Header
     letter-spacing: 4px;
     line-height: 70px;
     text-transform: uppercase; }
-  .header__caption:hover {
-    transition: all .3s ease;
-    transform: scale(1.5);
-    color: #FF0000;
-    text-shadow: 3px 3px 2px black, 0 0 1em lime; }
   .header__depiction {
     width: 50%;
     text-align: center;
@@ -446,9 +441,6 @@ Header
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 28px; }
-  .header__depiction:hover {
-    color: #FF0000;
-    transition: all .3s ease; }
   .header__circle {
     display: block;
     width: 36px;
@@ -456,6 +448,15 @@ Header
     transition: all .3s ease; }
   .header__circle:hover {
     transform: scale(1.5) rotateZ(20deg); }
+
+.sheensay_fixed {
+  padding-left: 15px;
+  border-radius: 5px;
+  width: 81.5%;
+  position: fixed !important;
+  top: 0 !important;
+  background: rgba(85, 107, 47, 0.5);
+  z-index: 1; }
 
 /*---------------------------------
 Menu
@@ -477,13 +478,13 @@ Menu
     line-height: 12px;
     text-decoration: none;
     border: solid 1px transparent;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 15px;
     transition: all 0.1s linear 0.1s; }
   .menu__link:hover {
     color: #0000CD;
-    font-size: 20px;
-    box-shadow: inset 0px 0px 34px 0px lime; }
+    border: solid 2px #ffffff;
+    transition: all 0.1s linear 0.1s; }
 
 /*---------------------------------
 The Portfolio
@@ -493,7 +494,6 @@ The Portfolio
   padding-top: 80px;
   padding-bottom: 100px; }
   .port__title {
-    width: 172px;
     margin: 0 auto 32px;
     color: #333b46;
     text-align: center;
@@ -503,9 +503,6 @@ The Portfolio
     line-height: 12px;
     text-transform: uppercase;
     letter-spacing: 3px; }
-  .port__title:hover {
-    transition: all .3s ease;
-    color: #FF0000; }
   .port__description {
     width: 457px;
     margin: 0 auto 82px;
@@ -514,8 +511,6 @@ The Portfolio
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 25px; }
-  .port__description:hover {
-    color: #FF00FF; }
 
 .button-group {
   text-align: center;
@@ -558,7 +553,6 @@ The Team
 .theteam {
   padding: 100px 0 100px; }
   .theteam__title {
-    width: 107px;
     margin: 0 auto 32px;
     color: #333b46;
     text-align: center;
@@ -568,9 +562,6 @@ The Team
     line-height: 12px;
     text-transform: uppercase;
     letter-spacing: 3px; }
-  .theteam__title:hover {
-    transition: all .3s ease;
-    color: #FF0000; }
   .theteam__description {
     width: 457px;
     margin: 0 auto 82px;
@@ -579,8 +570,6 @@ The Team
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 25px; }
-  .theteam__description:hover {
-    color: #FF00FF; }
   .theteam__slider-clause {
     display: flex !important;
     flex-flow: row;
@@ -687,7 +676,6 @@ TESTIMONIALS
   padding-top: 80px;
   padding-bottom: 100px; }
   .test__title {
-    width: 172px;
     margin: 0 auto 32px;
     color: #333b46;
     text-align: center;
@@ -697,9 +685,6 @@ TESTIMONIALS
     line-height: 12px;
     text-transform: uppercase;
     letter-spacing: 3px; }
-  .test__title:hover {
-    transition: all .3s ease;
-    color: #FF0000; }
   .test__description {
     width: 457px;
     margin: 0 auto 82px;
@@ -708,8 +693,6 @@ TESTIMONIALS
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 25px; }
-  .test__description:hover {
-    color: #FF00FF; }
   .test__slider {
     padding-top: 56px;
     background-color: #ffffff; }
@@ -757,7 +740,6 @@ Map
 .google-map {
   padding-top: 80px; }
   .google-map__title {
-    width: 135px;
     margin: 0 auto 32px;
     color: #333b46;
     text-align: center;
@@ -767,9 +749,6 @@ Map
     line-height: 12px;
     text-transform: uppercase;
     letter-spacing: 3px; }
-  .google-map__title:hover {
-    transition: all .3s ease;
-    color: #FF0000; }
   .google-map__description {
     width: 457px;
     margin: 0 auto 82px;
@@ -778,8 +757,6 @@ Map
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 25px; }
-  .google-map__description:hover {
-    color: #FF00FF; }
   .google-map__google-map {
     height: 439px;
     width: 100%;
