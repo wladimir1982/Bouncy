@@ -13,6 +13,7 @@ $(document).ready(function(){
     });
 });
 
+
 $(document).ready(function(){
     $('#box1 a').click(function(){
         var scroll_el = $(this).attr('href');
@@ -25,4 +26,5 @@ $(document).ready(function(){
         return false;
     });
 });
+
 

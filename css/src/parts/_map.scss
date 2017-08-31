@@ -1,18 +1,17 @@
 .google-map {
     padding-top: 80px;
     &__title {
-        width: 135px;
         @include title;
     }
-    &__title:hover {
-        @include title-hover;
-    }
+//    &__title:hover {
+//        @include title-hover;
+//    }
     &__description {
         @include description;
     }
-    &__description:hover {
-        @include description-hover;
-    }
+//    &__description:hover {
+//        @include description-hover;
+//    }
     &__google-map {
         height: 439px;
         width: 100%;

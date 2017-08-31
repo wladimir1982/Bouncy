@@ -3,18 +3,17 @@
     padding-top: 80px;
     padding-bottom: 100px;
     &__title {
-        width: 172px;
         @include title;
     }
-    &__title:hover {
-        @include title-hover;
-    }
+//    &__title:hover {
+//        @include title-hover;
+//    }
     &__description {
         @include description;
     }
-    &__description:hover {
-        @include description-hover;
-    }
+//    &__description:hover {
+//        @include description-hover;
+//    }
 }
 
 .button-group {
