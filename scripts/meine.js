@@ -50,6 +50,10 @@
                 }, 5000);
                 return false;
             });
+            
+//            Скрипт анимации
+            
+            new WOW().init();
 
         })(jQuery);
 
