@@ -3,8 +3,8 @@
 $(document).ready(function(){
     $('#menu .menu a').click(function(){
         var scroll_el = $(this).attr('href');
-        $('#menu .menu li').attr ("class","");
-        $(this).parent().attr("class","current active");
+        $('#menu .menu li').attr ("class","menu__item");
+        $(this).parent().attr("class","menu__item current active");
         
         if ($(scroll_el).length != 0) {
             $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000);
